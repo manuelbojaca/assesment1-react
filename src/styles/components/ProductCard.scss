@@ -1,0 +1,65 @@
+.card {
+    position: relative; // relative to locate, absolute default
+    height: 371px;
+    width: 188px;
+    left: 0px;  //modify to position
+    top: 0px;   //modify to position
+    bottom: 0px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.card--photo{
+    height: 240px;
+    width: 188px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    position: absolute;
+
+    border-radius: 4px;
+    background: #C4C4C4;
+}
+
+.card--photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;    
+}
+
+.card--title {
+    position: absolute;
+    height: 12px;
+    width: 100px;
+    left: 0px;
+    top: 248px;
+    
+}
+
+.card--id {
+    position: absolute;
+    height: 38px;
+    left: 0px;
+    right: 0px;
+    top: 264px;
+}
+
+.photo {
+    display: flex;
+    margin: 0px;
+    padding: 5px;
+    height:50px;
+    width: 50px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    border-radius: 4px;
+    background: #C4C4C4;
+}
+
+
