@@ -1,19 +1,30 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getPosts } from '../store/reducers/Post.reducer';
+import { getProducts } from '../store/reducers/Product.reducer';
 import ProductCard from '../components/ProductCard';
+import '../styles/components/Home.scss';
 
 const Home = () => {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.postReducer);
+  const data = useSelector((state) => state.productReducer);
+  const products = [...data.products];
   useEffect(() => {
-    dispatch(getPosts());
+    dispatch(getProducts());
   }, []);
-  const obj = { ...data.posts[0] };
-  console.log('data: ', obj.id);
+
+  console.log('data: ', products);
   return (
-    <div>
-      <ProductCard image={obj.image} title={obj.title} id={obj.id} />
+    <div className="home">
+      {products.map((product) => {
+        return (
+          <ProductCard
+            key={product.id}
+            image={product.image}
+            title={product.title}
+            id={product.id}
+          />
+        );
+      })}
     </div>
   );
 };
