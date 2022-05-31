@@ -1,0 +1,13 @@
+.about {
+    //display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    margin: 30px 80px;
+
+    color: #444;
+    font-size: 17px;
+    font-weight: 800;
+}
+.about--photo {
+    max-width: 500px;
+}

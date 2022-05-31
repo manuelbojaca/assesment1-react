@@ -1,5 +1,15 @@
 .home {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 30px 80px;
+
 }
+
+@media (max-width: 1140px) {
+    .home {
+        min-width: 400px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+} 

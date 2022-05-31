@@ -28,7 +28,6 @@ const initialState = {
 };
 
 const productsReducer = (state = initialState, action) => {
-  console.log('action: ', action);
   switch (action.type) {
     case PRODUCTS_LOADING:
       return {

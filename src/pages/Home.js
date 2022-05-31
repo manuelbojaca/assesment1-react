@@ -12,7 +12,6 @@ const Home = () => {
     dispatch(getProducts());
   }, []);
 
-  console.log('data: ', products);
   return (
     <div className="home">
       {products.map((product) => {
